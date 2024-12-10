@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Профиль Жак-Ива Кусто</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header class="header">
+            <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
+        </header>
+
+        <main class="content">
+            <section class="profile">
+                <img src="./images/Cousteau.png" alt="Жак-Ив Кусто" class="profile__pic" />
+                <div class="profile__info">
+                    <div class="profile__content">
+                        <h1 class="profile__author-name">Жак-Ив Кусто</h1>
+                        <button class="profile__edit-button" type="button"></button>
+                    </div>
+                    <p class="profile__author-job">Исследователь океана</p>
+                </div>
+                <button class="profile__add-button" type="button"></button>
+            </section>
+
+            <section class="cards">
+                <div class="elements">
+                    <div class="element">
+                        <img src="./images/china.jpg" alt="Горы Тяньцзы" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Горы Тяньцзы (Китай)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="./images/lavender.jpg" alt="Прованс" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Лавандовые поля в Провансе (Франция)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="./images/moraine.jpg" alt="Озеро" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Озеро Морейн (Канада)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="./images/sagano.jpg" alt="Япония" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Бамбуковый лес Сагано (Япония)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="./images/vietnam.jpg" alt="Вьетнам" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Залив Халонг (Вьетнам)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="./images/yosemite.jpg" alt="Йосемити" class="element__image" />
+                        <div class="element__caption">
+                            <h2 class="element__title">Долина Йосемити (США)</h2>
+                            <button class="element__like" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© 2024 Mesto Russia NJ</p>
+        </footer>
+
+        <div class="popup">
+            <button type="button" class="popup__close-button"></button>
+            <form action="#" class="popup__form">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <input id="name-input" minlength="2" maxlength="40" type="text" placeholder="Имя" class="popup__input popup__input_name" />
+                <input id="job-input" minlength="2" maxlength="200" type="text" placeholder="Вид деятельности" class="popup__input popup__input_job" />
+                <button type="submit" aria-label="Кнопка «отправить»" class="popup__button popup__save-button">Сохранить</button>
+            </form>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
